@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="551.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturer.CreateNewExam3Controller">
+    <children>
+        <Text fill="#00509d" layoutX="31.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Total Points:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+        <Button fx:id="id_Finish" layoutX="461.0" layoutY="489.0" mnemonicParsing="false" onAction="#Finish" prefHeight="46.0" prefWidth="90.0" style="-fx-background-color: #00509d;" styleClass="custom-button" text="Finish" textFill="WHITE">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Button>
+      <Text fill="#00509d" layoutX="31.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Total Question:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="id_TotalPoint" layoutX="213.0" layoutY="210.0" prefHeight="20.0" prefWidth="100.0" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_TotalQuesation" layoutX="213.0" layoutY="257.0" prefHeight="20.0" prefWidth="100.0" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_Subject" layoutX="213.0" layoutY="305.0" prefHeight="20.0" prefWidth="100.0" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_ExamCourse" layoutX="213.0" layoutY="354.0" prefHeight="20.0" prefWidth="100.0" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="19.0" />
+         </font>
+      </Label>
+      <Text fill="#00509d" layoutX="33.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Subject:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="id_Back" layoutX="2.0" layoutY="465.0" mnemonicParsing="false" onAction="#back" prefHeight="59.0" prefWidth="141.0" style="-fx-background-color: #ffffff;" styleClass="custom-button" text="Back" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text fill="#00509d" layoutX="36.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Exam Course:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#00509d" layoutX="31.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Duration:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="id_Duration" layoutX="213.0" layoutY="161.0" prefHeight="20.0" prefWidth="100.0" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="72.0" prefWidth="551.0" style="-fx-background-color: #00509d;" text="Summary" textFill="WHITE">
+         <font>
+            <Font name="David Bold" size="31.0" />
+         </font>
+      </Label>
+    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

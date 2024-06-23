@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="895.0" style="-fx-background-color: #ffffff;" stylesheets="@../gui/server.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerGUI">
+   <children>
+      <Pane layoutX="-8.0" prefHeight="91.0" prefWidth="906.0" style="-fx-background-color: #00509D;">
+         <children>
+            <Label layoutX="361.0" layoutY="28.0" text="Server Area" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Label>
+            <FontAwesomeIcon fx:id="exitbutton" glyphName="CLOSE" layoutX="849.0" layoutY="61.0" onMouseClicked="#exitApplication" size="3em" />
+         </children>
+      </Pane>
+      <VBox layoutX="176.0" layoutY="156.0" prefHeight="298.0" prefWidth="214.0">
+         <children>
+            <TextField fx:id="id_IPaddress" editable="false" prefHeight="27.0" prefWidth="214.0" style="-fx-border-color: #00509D; -fx-background-color: #ffffff;">
+    <VBox.margin>
+        <Insets bottom="23.0" />
+    </VBox.margin>
+</TextField>
+            <TextField fx:id="id_Port" style="-fx-border-color: #00509D; -fx-background-color: #ffffff;">
+               <VBox.margin>
+                  <Insets bottom="23.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="id_DB_path" style="-fx-border-color: #00509D; -fx-background-color: #ffffff;">
+               <VBox.margin>
+                  <Insets bottom="23.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="id_DB_UserName" style="-fx-border-color: #00509D; -fx-background-color: #ffffff;">
+               <VBox.margin>
+                  <Insets bottom="23.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="id_DB_Password" prefHeight="21.0" prefWidth="214.0" style="-fx-border-color: #00509D; -fx-background-color: #ffffff;" />
+         </children>
+      </VBox>
+      <Label layoutX="57.0" layoutY="118.0" prefHeight="24.0" prefWidth="178.0" text="Server Connection" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Label>
+      <Label layoutX="594.0" layoutY="119.0" text="Connected Clients" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Label>
+      <TableView fx:id="clientTable" layoutX="436.0" layoutY="156.0" prefHeight="226.0" prefWidth="443.0" AnchorPane.rightAnchor="27.0">
+         <columns>
+            <TableColumn fx:id="ipColumn" prefWidth="144.0" text="IP" />
+            <TableColumn fx:id="hostColumn" prefWidth="144.0" text="Host" />
+            <TableColumn fx:id="statusColumn" prefWidth="160.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="id_startserver" layoutX="425.0" layoutY="391.0" mnemonicParsing="false" onAction="#connectServer" prefHeight="55.0" prefWidth="132.0" style="-fx-background-color: #00509D;" text="Start Server" textFill="WHITE">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Button>
+      <Text fx:id="connectedMessage" layoutX="595.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="124.00000700354576" />
+      <Label layoutX="52.0" layoutY="160.0" prefHeight="25.0" prefWidth="112.0" text="IP Address:" textFill="#00509d">
+         <font>
+            <Font name="David" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="274.0" prefHeight="27.0" prefWidth="100.0" text="DB Name:" textFill="#00509d">
+         <font>
+            <Font name="David" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="332.0" prefHeight="27.0" prefWidth="151.0" text="DB User Name:" textFill="#00509d">
+         <font>
+            <Font name="David" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="383.0" prefHeight="27.0" prefWidth="132.0" text="DB Password:" textFill="#00509d">
+         <font>
+            <Font name="David" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="217.0" prefHeight="27.0" prefWidth="61.0" text="Port:" textFill="#00509d">
+         <font>
+            <Font name="David" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="StopServerButt" layoutX="736.0" layoutY="390.0" mnemonicParsing="false" onAction="#StopServer" prefHeight="55.0" prefWidth="132.0" style="-fx-background-color: #00509D;" text="Stop Server" textFill="WHITE">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Button>
+      <TextArea fx:id="consolearea" editable="false" layoutX="8.0" layoutY="467.0" prefHeight="200.0" prefWidth="420.0" style="-fx-border-color: #00509D;" />
+      <Label layoutX="14.0" layoutY="430.0" text="console:" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

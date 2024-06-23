@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="highest_grade_text" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="984.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturer.ExamStatisticsController2">
+   <children>
+      <Text fill="#00509d" layoutX="37.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="39.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="40.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="41.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lowest Grade:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="39.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Highest Grade:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="35.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Failing Percentage:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="34.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam ID:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <BarChart fx:id="graph" disable="true" layoutX="347.0" layoutY="236.0" prefHeight="435.0" prefWidth="560.0">
+        <xAxis>
+          <CategoryAxis label="xAxis" prefWidth="228.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="yAxis" side="LEFT" upperBound="90.0" />
+        </yAxis>
+      </BarChart>
+      <Text layoutX="174.0" layoutY="211.0" opacity="0.24" strokeType="OUTSIDE" strokeWidth="0.0" text="Computerized Exam Management System" wrappingWidth="605.2035638757516">
+         <font>
+            <Font name="Bradley Hand ITC" size="33.0" />
+         </font>
+      </Text>
+      <Button layoutX="922.0" layoutY="659.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="57.0" style="-fx-background-color: #ffffff;" />
+      <ImageView fx:id="main_icon" fitHeight="63.0" fitWidth="76.0" layoutX="920.0" layoutY="659.0" onMouseClicked="#move_to_main" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pictures/House.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" alignment="CENTER_RIGHT" layoutX="2.0" layoutY="660.0" mnemonicParsing="false" onAction="#back" prefHeight="62.0" prefWidth="139.0" style="-fx-background-color: #ffffff;" text="Back" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="back" fitHeight="48.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text fx:id="exam_id_text" fill="#00509d" layoutX="154.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.0000228881836">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Text>
+      <Text fx:id="course_text" fill="#00509d" layoutX="154.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.00000822544098">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Text>
+      <Text fx:id="median_test" fill="#00509d" layoutX="154.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.0000228881836">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Text>
+      <Text fx:id="average_text" fill="#00509d" layoutX="160.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.0000228881836">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Text>
+      <Text fx:id="Lowest_Grade_test" fill="#00509d" layoutX="209.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.61425566673279">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Text>
+      <Text fx:id="heghest_grade" fill="#00509d" layoutX="209.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.61425566673279">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Text>
+      <Text fx:id="failing_percentage_text" fill="#00509d" layoutX="229.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.00000822544098">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Text>
+      <Pane prefHeight="96.0" prefWidth="984.0" style="-fx-background-color: #00509d;">
+         <children>
+            <Text fill="WHITE" layoutX="281.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Statistic Dashboard">
+               <font>
+                  <Font name="David Bold" size="38.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#00509d" layoutX="14.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Welcome to the Statistics Page! Here, you can explore insightful data and analytics related to student exam performance" wrappingWidth="528.337890625">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

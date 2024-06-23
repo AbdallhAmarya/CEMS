@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="832.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.StartManualExamController2">
+   <children>
+      <Text fill="#00509d" layoutX="11.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press download button to download the exam">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#00509d" layoutX="278.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="course_name" fill="#00509d" layoutX="363.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="121.80340576171875">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#00509d" layoutX="526.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="time" fill="#00509d" layoutX="595.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.66668701171875">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="download" layoutX="614.0" layoutY="176.0" mnemonicParsing="false" onAction="#download" style="-fx-background-color: #00509d;" text="Download " textFill="WHITE">
+         <font>
+            <Font name="David" size="22.0" />
+         </font></Button>
+      <Text fill="#00509d" layoutX="10.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press upload button to upload your solution:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="file_path" layoutX="423.0" layoutY="259.0" prefHeight="25.0" prefWidth="166.0" style="-fx-border-color: #00509d;" />
+      <Button fx:id="upload" layoutX="615.0" layoutY="253.0" mnemonicParsing="false" onAction="#upload" prefHeight="43.0" prefWidth="127.0" style="-fx-background-color: #00509d;" text="Upload " textFill="WHITE">
+         <font>
+            <Font name="David" size="22.0" />
+         </font></Button>
+      <Button fx:id="back" layoutY="356.0" mnemonicParsing="false" onAction="#back" prefHeight="59.0" prefWidth="131.0" style="-fx-background-color: #ffffff;" text="Back" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="submit" layoutX="702.0" layoutY="358.0" mnemonicParsing="false" onAction="#submit" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: #00509d;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="David" size="22.0" />
+         </font></Button>
+      <Text fill="#00509d" layoutX="14.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam ID:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="id" fill="#00509d" layoutX="115.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.66669821739197">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" prefHeight="73.0" prefWidth="832.0" style="-fx-background-color: #00509d;" text="Welcome to Manual Exam: Download and Submittion" textFill="WHITE">
+         <font>
+            <Font name="David Bold" size="32.0" />
+         </font>
+      </Label>
+      <Line endX="729.0" layoutX="103.0" layoutY="444.0" startX="-100.0" />
+      <Text fill="#686868" layoutX="14.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Review and Verify: Before submitting, double-check your answers to ensure accuracy and completeness." wrappingWidth="612.1484375">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

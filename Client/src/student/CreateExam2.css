@@ -1,0 +1,132 @@
+/* Set the background color of the table */
+.table-view {
+    -fx-background-color: #f2f2f2;
+    -fx-border-color: #00509d;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+/* Set the font size and color of the table header */
+.table-view .column-header {
+    -fx-background-color: #00509d;
+    -fx-text-fill: white;
+}
+.black-text-area {
+    -fx-text-fill: black;
+}
+/* Set the font size and color of the table cells */
+.table-row-cell {
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}
+
+/* Set the background color of the table header */
+.table-view .column-header-background {
+    -fx-background-color: #00509d;
+}
+
+/* Set the text color of the table header */
+.table-view .column-header .label {
+    -fx-background-color: #00509d;
+    -fx-text-fill: white;
+}
+
+/* Set the background color of the selected table row */
+.table-row-cell:selected {
+    -fx-background-color: #cce6ff;
+}
+
+/* Set the padding around the table cells */
+.table-cell {
+    -fx-padding: 5px;
+}
+
+.table-button {
+    -fx-background-color: #00509d;
+    -fx-text-fill: white;
+    -fx-background-radius: 30px;
+    -fx-padding: 5px 10px;
+    -fx-font-size: 12px;
+}
+.text-field {
+    -fx-background-color: #f2f2f2;
+    -fx-border-color: #00509d;
+}
+
+.text-area {
+    -fx-control-inner-background: #f2f2f2;
+    -fx-border-color: #00509d;
+}
+
+.combo-box {
+    -fx-background-color: #f2f2f2;
+    -fx-border-color: #00509d;
+    -fx-text-fill: #00509d;
+    -fx-prompt-text-fill: #00509d;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #00509d;
+    -fx-background-radius: 0;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #ffffff;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #f2f2f2;
+    -fx-text-fill: #00509d;
+}
+
+.combo-box .list-view .cell:selected {
+    -fx-background-color: #00509d;
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box:hover {
+    -fx-border-color: #00509d;
+}
+
+.combo-box:focused {
+    -fx-border-color: #00509d;
+    -fx-focus-color: transparent;
+}
+
+.radio-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+/* Radio button dot */
+.radio-button .radio {
+    -fx-background-color: #2196F3; /* Blue color */
+    -fx-border-radius: 50%;
+    -fx-min-width: 12px;
+    -fx-min-height: 12px;
+    -fx-max-width: 12px;
+    -fx-max-height: 12px;
+}
+
+/* Selected radio button dot */
+.radio-button:selected .radio {
+    -fx-background-color: #0D47A1; /* Darker shade of blue */
+}
+
+/* Radio button label */
+.radio-button .label {
+    -fx-padding: 0 0 0 5px;
+}
+
+.question-point {
+    -fx-fill: #2196F3; /* Blue color */
+    -fx-font-size: 14px;
+    /* Add any additional styles you want */
+}
+.question-text {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    /* Add any additional styles you want */
+}
+

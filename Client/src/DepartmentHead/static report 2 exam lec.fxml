@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="920.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepartmentHead.Report2ExamLec">
+   <children>
+      <Text fill="#00509d" layoutX="237.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select lecturer ID:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="lecId" layoutX="420.0" layoutY="105.0" prefWidth="150.0" promptText="ID" style="-fx-background-color: #ffffff; -fx-border-color: #00509d;" />
+      <Text fill="#00509d" layoutX="37.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select exam1 ID:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="exam_id1" layoutX="209.0" layoutY="191.0" prefWidth="150.0" promptText="ID1" style="-fx-background-color: #ffffff; -fx-border-color: #00509d;" />
+      <Text fill="#00509d" layoutX="489.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select exam2 ID:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="exam_id2" layoutX="669.0" layoutY="191.0" prefWidth="150.0" promptText="ID2" style="-fx-background-color: #ffffff; -fx-border-color: #00509d;" />
+      <Line endX="-85.66668701171875" endY="470.0" layoutX="517.0" layoutY="177.0" startX="-85.66668701171875" startY="-2.0" />
+      <Text fill="#00509d" layoutX="37.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#00509d" layoutX="37.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#00509d" layoutX="489.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#00509d" layoutX="489.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="average1" fill="#00509d" layoutX="142.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="115.85937499999989">
+         <font>
+            <Font name="David" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="medin1" fill="#00509d" layoutX="137.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.85938966274261">
+         <font>
+            <Font name="David" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="average2" fill="#00509d" layoutX="589.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="82.75928735733032">
+         <font>
+            <Font name="David" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="medin2" fill="#00509d" layoutX="589.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.85937499999989">
+         <font>
+            <Font name="David" size="19.0" />
+         </font>
+      </Text>
+      <BarChart fx:id="graph1" layoutX="21.0" layoutY="341.0" prefHeight="277.0" prefWidth="375.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="graph2" layoutX="481.0" layoutY="341.0" prefHeight="277.0" prefWidth="375.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Label alignment="CENTER" prefHeight="69.0" prefWidth="920.0" style="-fx-background-color: #00509d;" text="Compare Bewtween Two Exams For The Same Lecturer" textFill="WHITE">
+         <font>
+            <Font name="David Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button layoutY="618.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Back" textFill="#00509d" onAction="#back">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

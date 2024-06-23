@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="884.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepartmentHead.ShowReport1Controller">
+   <children>
+      <ComboBox fx:id="choose_lec_combo" layoutX="224.0" layoutY="162.0" prefHeight="33.0" prefWidth="167.0" promptText="Open to view ID" style="-fx-background-color: #ffffff; -fx-border-color: #00509D;" />
+      <Text fill="#00509d" layoutX="24.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose lecturer ID:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="24.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AVG for all exams:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <Text fill="#00509d" layoutX="24.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font></Text>
+      <BarChart fx:id="graph" layoutX="242.0" layoutY="272.0" prefHeight="400.0" prefWidth="628.0">
+        <xAxis>
+          <CategoryAxis label="0-9    10-19   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-100" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Number of grades" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="back_button" layoutX="6.0" layoutY="625.0" mnemonicParsing="false" onAction="#back" prefHeight="72.0" prefWidth="154.0" style="-fx-background-color: #ffffff;" text="Back" textFill="#00509d">
+         <font>
+            <Font name="David Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="show_button" layoutX="425.0" layoutY="150.0" mnemonicParsing="false" onAction="#show" prefHeight="58.0" prefWidth="116.0" style="-fx-background-color: #00509D;" text="Show" textFill="WHITE">
+         <font>
+            <Font name="David" size="21.0" />
+         </font></Button>
+      <Text fx:id="AVG_text" fill="#00509d" layoutX="224.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.00000560283661">
+         <font>
+            <Font name="David" size="19.0" />
+         </font></Text>
+      <Text fx:id="Median_text" fill="#00509d" layoutX="140.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.0">
+         <font>
+            <Font name="David" size="19.0" />
+         </font></Text>
+      <Text fx:id="status_text" fill="RED" layoutX="60.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.00000560283661">
+         <font>
+            <Font name="David" size="19.0" />
+         </font></Text>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="77.0" prefWidth="884.0" style="-fx-background-color: #00509D;" text="Lecturer Exam Statistic" textFill="WHITE">
+         <font>
+            <Font name="David Bold" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="914.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LogIn">
+   <children>
+      <TextField fx:id="username_textfield" layoutX="590.0" layoutY="166.0" prefWidth="187.0" promptText="Username" style="-fx-background-color: white; -fx-border-color: #00509D; -fx-border-width: 2px; -fx-prompt-text-fill: #707070;" />
+      <PasswordField fx:id="password_textfield" layoutX="590.0" layoutY="250.0" prefHeight="35.0" prefWidth="187.0" promptText="Password" style="-fx-background-color: white; -fx-border-color: #00509D; -fx-border-width: 2px; -fx-prompt-text-fill: #707070;" />
+      <Text fill="#003F88" layoutX="473.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Userame:">
+         <font>
+            <Font name="David" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#003F88" layoutX="471.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font name="David" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="login_button" layoutX="620.0" layoutY="424.0" mnemonicParsing="false" onAction="#login" prefHeight="55.0" prefWidth="133.0" style="-fx-background-color: #00509D; -fx-text-fill: white;" text="Login">
+         <font>
+            <Font name="David" size="22.0" />
+         </font></Button>
+      <ImageView fx:id="image1" fitHeight="573.0" fitWidth="475.0" layoutX="38.0" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/cems-logo2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="login_label" alignment="CENTER" layoutX="-5.0" prefHeight="55.0" prefWidth="921.0" style="-fx-background-color: #003F88;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="David" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="Exit_button" layoutX="-5.0" layoutY="521.0" mnemonicParsing="false" onAction="#exitapp" prefHeight="55.0" prefWidth="86.0" style="-fx-background-color: #00509D;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="David" size="22.0" />
+         </font>
+      </Button>
+      <ComboBox layoutX="466.0" layoutY="333.0" prefWidth="150.0" visible="false" />
+      
+      <ComboBox fx:id="infoStationComboBox" layoutX="590.0" layoutY="331.0" prefHeight="35.0" prefWidth="187.0" promptText="Info Station:" style="-fx-background-color: #ffffff; -fx-border-color: #00509d; -fx-border-width: 2px;" />
+      <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="522.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pictures/Human.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="status" fill="RED" layoutX="590.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="187.33333333333348" />
+      <Button fx:id="register_button" layoutY="6.0" mnemonicParsing="false" onAction="#register" prefHeight="35.0" prefWidth="187.0" style="-fx-background-color: #003F88;" text="Register new user" textFill="WHITE">
+         <font>
+            <Font name="David" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
